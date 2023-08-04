@@ -7,10 +7,17 @@ export default function Home() {
   useEffect(()=>{
     async function getApi()
     {
-      const apiData=await fetch(`http://universities.hipolabs.com/search?country=${country}`);
-      const jsonData=await apiData.json();
-      console.log(jsonData);
-      setState(jsonData);
+      try
+      {
+        const apiData=await fetch(`http://universities.hipolabs.com/search?country=${country}`);
+        const jsonData=await apiData.json();
+        console.log(jsonData);
+        setState(jsonData);
+      }
+      catch(error)
+      {
+        console.error(`Error is : ${error}`);
+      }
     }
     getApi();  
   },[country])
