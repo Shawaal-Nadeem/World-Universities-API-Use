@@ -9,7 +9,7 @@ export default function Home() {
     {
       try
       {
-        const apiData=await fetch(`https://universities.hipolabs.com/search?country=${country}`);
+        const apiData=await fetch(`http://universities.hipolabs.com/search?country=${country}`);
         const jsonData=await apiData.json();
         console.log(jsonData);
         setState(jsonData);
