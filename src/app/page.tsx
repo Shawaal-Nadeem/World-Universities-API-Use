@@ -37,13 +37,18 @@ export default function Home() {
   <h2 className=" w-1/4">University</h2>
   <h2 className=" w-1/5">Province</h2>
   </div>
+  
   {state.map((parameter:any,index:number)=>{
     return(
-  <ul key={index} className={index%2===0?'bg-slate-400 flex justify-around w-full mt-2':'bg-white flex justify-around w-full mt-2'}>
-   <li className=" w-1/6"> {index+1}</li> 
+  <ul key={index} className={index%2===1?'bg-slate-400 flex justify-around w-full mt-2':'bg-white flex justify-around w-full mt-2'}>
+  {state.length===1?<h2>Loading..............</h2>:
+  <>
+  <li className=" w-1/6"> {index+1}</li> 
    <li className=" w-1/4">{parameter.country}</li>
    <li className=" w-1/4">{parameter.name}</li>
    <li className=" w-1/5">{parameter['state-province']}</li>
+  </>
+  }
     </ul>
   )})}
 </div>
