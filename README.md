@@ -1,3 +1,14 @@
+API is not fetching on live website bcz i use dummy API which is just run for development mode.
+
+If u wanna see how API works then clone this repository and type npm run dev on cmd terminal of VS code. 
+
+
+
+
+
+
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
