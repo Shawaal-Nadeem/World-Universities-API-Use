@@ -59,7 +59,7 @@ export default function Home() {
   <li className=" w-1/6"> {index+1}</li> 
    <li className=" w-1/4">{parameter.country}</li>
    <li className=" w-1/4">{parameter.name}</li>
-   <li className=" w-1/5">{parameter['state-province']}</li>
+   {parameter['state-province']!=null? <li className=" w-1/5">{parameter['state-province']}</li>:<p className=" w-1/5">Not Known</p> }
   </>
   }
     </ul>
