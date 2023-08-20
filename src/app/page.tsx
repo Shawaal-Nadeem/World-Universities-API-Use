@@ -35,7 +35,7 @@ export default function Home() {
   }
   return (
 <>
-<h1 className=" font-extrabold text-center text-3xl">World Universities</h1>
+<h1 className=" font-extrabold text-center text-3xl">World Universities Data</h1>
 <div className=" flex justify-center mt-20">
 <label>Enter Country : &nbsp;</label>
 <input type='text' value={country} onChange={(e)=> setCountry(e.target.value)} className=" border border-black border-solid pl-2"/>
